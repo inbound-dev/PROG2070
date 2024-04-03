@@ -8,6 +8,9 @@ namespace Assignment2_Tests
 {
     public class RectangleTest
     {
-
+        public void GetLength_RectangleLength()
+        {
+            
+        }
     }
 }
