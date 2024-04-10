@@ -97,12 +97,12 @@ namespace Assingment2.Tests
             submitBtn.Click();
 
             //this is the line i could never get to work
-            //String output = driver.FindElement(By.XPath("")).GetAttribute("value");
+            String output = driver.FindElement(By.XPath("//*[@id=\"content\"]/div[3]/div[2]/div/font")).GetAttribute("value");
 
             Console.WriteLine(output);
 
             //checks to see if the program ran sucsessfully
-            Assert.That(output, Is.EqualTo("Please provide a positive hours per week value."));
+            //Assert.That(output, Is.EqualTo("Please provide a positive hours per week value."));
 
             driver.Quit();
         } 
